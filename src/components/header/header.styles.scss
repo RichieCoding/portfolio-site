@@ -1,6 +1,7 @@
 .header {
   // background: aqua;
 
+
   a {
     text-decoration: none;
 
@@ -16,14 +17,14 @@
   .header-nav-items {
     display: none;
   }
-  
+
   .header-nav {
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 15px 0;
     font-size: 1em;
   }
 
@@ -36,19 +37,19 @@
     // display: none;
     cursor: pointer;
   }
-
-  
 }
 
 @media (min-width: 580px) {
   .header {
+    .header-nav {
+      padding: 40px 0;
+    }
     .header-nav-items {
       display: block;
     }
-  }
-  
 
-  .menu-icon {
-    display: none;
+    .menu-icon {
+      display: none;
+    }
   }
 }
