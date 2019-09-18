@@ -12,6 +12,10 @@
   .header-logo {
     font-size: 1.4em;
   }
+
+  .header-nav-items {
+    display: none;
+  }
   
   .header-nav {
     width: 90%;
@@ -28,11 +32,23 @@
     margin-left: 15px;
   }
 
+  .menu-icon {
+    // display: none;
+    cursor: pointer;
+  }
+
   
 }
 
-@media (max-width: 580px) {
-  .header-nav-items {
+@media (min-width: 580px) {
+  .header {
+    .header-nav-items {
+      display: block;
+    }
+  }
+  
+
+  .menu-icon {
     display: none;
   }
 }
