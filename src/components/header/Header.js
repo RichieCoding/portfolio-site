@@ -1,23 +1,25 @@
-import React from 'react'
-import './header.styles.scss'
-import SideBarToggleButton from '../SideBar/SideBarToggleButton';
+import React from "react";
+import "./header.styles.scss";
+import { Link } from "react-router-dom";
 
-const Header = () => (
+const Header = props => (
   <header className='header'>
     <nav className='header-nav'>
-      <div>
-        <SideBarToggleButton />
+      <div className='header-logo'>
+        <Link to='/'>Richard Li</Link>
       </div>
-      <div className='header-logo'><a href="/">The Logo</a></div>
-      <div className='spacer' />
       <div className='header-nav-items'>
         <ul>
-          <li><a href="/">Work</a></li>
-          <li><a href="/">About</a></li>
+          <li>
+            <Link to='/projects'>Projects</Link>
+          </li>
+          <li>
+            <Link to='/about'>About</Link>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
-)
+);
 
-export default Header
+export default Header;
