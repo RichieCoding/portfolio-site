@@ -1,9 +1,9 @@
 import React from 'react'
 import './project-page.styles.scss'
-import Shoppie from '../../assets/images/ShoppieProject.png'
-import Shoppie2 from '../../assets/images/Project2.png'
+import Shoppie from '../../assets/images/Mod5-01.png'
+import Shoppie2 from '../../assets/images/Chello-01.png'
 import Shoppie3 from '../../assets/images/ProjectTile3.png'
-import Shoppie4 from '../../assets/images/hello.png'
+import Shoppie4 from '../../assets/images/Project2.png'
 
 const ProjectPage = () => {
   return (
