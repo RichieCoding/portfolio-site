@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 25px 0;
     font-size: 1em;
   }
 
@@ -41,6 +41,9 @@
 
 @media (min-width: 580px) {
   .header {
+    max-width: 1285px;
+    margin: 0 auto;
+
     .header-nav {
       padding: 40px 0;
     }
