@@ -6,17 +6,6 @@
   align-items: center;
   margin: 0 auto;
 
-  .project-image {
-    width: 100%;
-    max-width: 450px;
-    max-height: 650px;
-    margin-bottom: 15px;
-    // margin-bottom: 20px;
-  }
-
-  .project-title {
-    margin: 15px 0 15px 0;
-  }
 }
 
 @media (min-width: 770px) {
@@ -35,16 +24,5 @@
     flex-wrap: wrap;
     margin: 0 auto;
 
-    .project-image {
-      display: inline-block;
-      max-width: 560px;
-      max-height: 750px;
-      flex-basis: calc(50% - 20px);
-      margin-bottom: 40px;
-    } 
-
-    .project-title {
-      display: none;
-    }
   }
 }
