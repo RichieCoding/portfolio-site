@@ -1,0 +1,64 @@
+.project-tile {
+  .project-image {
+    width: 100%;
+    max-width: 450px;
+    max-height: 650px;
+    margin-bottom: 15px;
+    // margin-bottom: 20px;
+  }
+  
+  .project-title {
+    margin: 15px 0 15px 0;
+  }  
+
+  .hover-title {
+    display: none;
+  }
+}
+
+
+@media (min-width: 770px) {
+  .project-tile {
+    position: relative;
+
+    &:hover .top {
+      opacity: 100;
+    }
+
+    .project-image {
+
+      max-width: 560px;
+      max-height: 750px;
+
+      margin-bottom: 40px;
+    } 
+
+    .project-title {
+      display: none;
+    }
+
+    .top {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: white;
+      z-index: 99;
+      opacity: 0;
+      transition: opacity .2s ease-out;
+      cursor: pointer;
+
+      .hover-title {
+        display: block;
+        font-size: 2em;
+        text-align: center;
+      }
+    }
+
+
+  }
+}
