@@ -1,9 +1,9 @@
 .project-tile {
+  margin-bottom: 15px;
   .project-image {
     width: 100%;
     max-width: 450px;
     max-height: 650px;
-    margin-bottom: 15px;
     // margin-bottom: 20px;
   }
   
@@ -20,17 +20,15 @@
 @media (min-width: 770px) {
   .project-tile {
     position: relative;
+    margin-bottom: 35px;
 
     &:hover .top {
       opacity: 100;
     }
 
     .project-image {
-
       max-width: 560px;
       max-height: 750px;
-
-      margin-bottom: 40px;
     } 
 
     .project-title {
@@ -56,6 +54,7 @@
         display: block;
         font-size: 2em;
         text-align: center;
+        color: black;
       }
     }
 
