@@ -14,7 +14,7 @@ const ShoppiePage = () => {
           <a href="https://github.com/RichieCoding/Ecommerce-Front-End" target='_blank'><p>Github</p></a>
         </div>
       </div>
-      <div className='test'>
+      <div className='shoppie-header'>
         <div className='main-header'>
           <h3>Shoppie</h3>
           <p>An ecommerce site that an admin can sign in and manage their ecommerce site. They can track, add, and edit their inventory and view orders
@@ -33,6 +33,7 @@ const ShoppiePage = () => {
           </div>
         </div>
       </div>
+      <hr></hr>
     </div>
   )
 }
