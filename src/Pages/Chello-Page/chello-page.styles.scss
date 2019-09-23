@@ -1,0 +1,117 @@
+.chello-page {
+  // width: 90%;
+  // max-width: 1200px;
+  // margin: 0 auto;
+
+  .main-image {
+    .image-container {
+      width: 90%;
+      max-width: 1150px;
+      margin: 0 auto 15px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .project-buttons {
+      text-align: center;
+      margin: 30px 0;
+
+      p {
+        display: inline-block;
+        background: rgb(7, 7, 7);
+        opacity: 0.8;
+        color: white;
+        padding: 10px 20px;
+        margin: 0 15px;
+        border-radius: 15px;
+        transition: opacity 0.4s ease-out;
+
+        &:hover {
+          opacity: 1;
+          color: rgb(118, 148, 236);
+        }
+      }
+    }
+  }
+
+  .side-title {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5px;
+  }
+
+  .chello-header {
+    width: 90%;
+    margin: 0 auto;
+
+    .main-header {
+      text-align: center;
+      h3 {
+        font-family: 'Oleo Script', cursive;
+        font-size: 4em;
+        text-align: center;
+        color: linear-gradient(to right, #e7a790, #e29e88, #dc9580, #d78d78, #d18471);
+        // background: -webkit-linear-gradient(rgb(1, 41, 160), #d4694e);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // color: black;
+        opacity: 0.8;
+      }
+    }
+
+    .credentials {
+      display: flex;
+      text-align: center;
+      width: 95%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  
+  }
+
+  hr {
+    width: 35%;
+    margin: 45px auto;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .chello-page {
+
+    .main-image {
+      .project-buttons {
+        p {
+          padding: 15px 35px;
+        }
+      }
+    }
+
+
+    .chello-header {
+
+      .main-header {
+        text-align: center;
+
+        h3 {
+          font-size: 7.3em;
+        }
+
+        p {
+          width: 65%;
+          margin: 15px auto;
+        }
+      }
+
+      .credentials {
+        display: flex;
+        width: 40%;
+        margin: 0 auto;
+        justify-content: center;
+      }
+    }
+
+  }
+  
+}
