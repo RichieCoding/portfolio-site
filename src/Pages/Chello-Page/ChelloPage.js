@@ -1,6 +1,6 @@
 import React from 'react'
 import './chello-page.styles.scss'
-import Shoppie from '../../assets/images/main-chello-01.png'
+import Shoppie from '../../assets/images/main-chello-02.png'
 
 const ChelloPage = () => {
   return (
@@ -10,15 +10,14 @@ const ChelloPage = () => {
           <img src={Shoppie} alt="project"/>
         </div>
         <div className='project-buttons'>
-          <a href="https://github.com/RichieCoding/Ecommerce-Front-End" target='_blank'><p>Demo</p></a>
-          <a href="https://github.com/RichieCoding/Ecommerce-Front-End" target='_blank'><p>Github</p></a>
+          <a href="https://github.com/RichieCoding/Ecommerce-Front-End" target='_blank'><p>Video</p></a>
+          <a href="https://github.com/RichieCoding/tGRAH-front-end" target='_blank'><p>Github</p></a>
         </div>
       </div>
       <div className='chello-header'>
         <div className='main-header'>
           <h3>Chello</h3>
-          <p>An ecommerce site that an admin can sign in and manage their ecommerce site. They can track, add, and edit their inventory and view orders
-  that were created by customers. A customer can view products, log in and view orders they've placed.</p>
+          <p>A Trello clone where we implemented the basic functionality of the Trello app. You can create a project, add tasks to that project. Delete a task from a project, etc.</p>
         </div>
         <div className='credentials'>
           <div style={{margin: '20px 0'}}>

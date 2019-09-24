@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import ProjectPage from "./Pages/Projects Page/ProjectPage";
 import ShoppiePage from "./Pages/Shoppie-Page/ShoppiePage";
 import ChelloPage from "./Pages/Chello-Page/ChelloPage"
+import CritterPage from "./Pages/Critter-Page/CritterPage";
 
 class App extends Component {
   state = {
@@ -30,6 +31,7 @@ class App extends Component {
         <Route exact path ='/' component={ProjectPage} />
         <Route exact path ='/projects/Shoppie' component={ShoppiePage} />
         <Route exact path ='/projects/Chello' component={ChelloPage} />
+        <Route exact path ='/projects/Critter' component={CritterPage} />
         </Switch>
       </>
     );
