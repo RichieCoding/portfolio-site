@@ -3,7 +3,7 @@ import './timeline.styles.scss'
 
 const Timeline = () => {
   return (
-    <div>
+    <div className='timeline'>
       
     </div>
   )
