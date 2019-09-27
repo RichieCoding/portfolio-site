@@ -12,7 +12,7 @@ const CritterPage = () => {
         </div>
         <div className='project-buttons'>
           <a href="https://github.com/RichieCoding/Ecommerce-Front-End" target='_blank'><p>Demo</p></a>
-          <a href="https://github.com/RichieCoding/Ecommerce-Front-End" target='_blank'><p>Github</p></a>
+          <a href="https://github.com/RichieCoding/Critter.com" target='_blank'><p>Github</p></a>
         </div>
       </div>
       <div className='critter-header'>
