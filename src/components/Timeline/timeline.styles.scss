@@ -1,0 +1,34 @@
+.timeline {
+  position: relative;
+  margin: 10px auto;
+  // padding: 10px 0;
+  width: 1000px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: .75px;
+    height: 100%;
+    background: black;
+  }
+
+  ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+
+    &:nth-child(odd) {
+      float: left;
+      text-align: right;
+      clear: both;
+    }
+
+    &:nth-child(even) {
+      float: right;
+      text-align: left;
+      clear: both;
+    }
+  }
+}
