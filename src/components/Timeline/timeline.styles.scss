@@ -4,6 +4,15 @@
   // padding: 10px 0;
   width: 1000px;
 
+  h3 {
+    color: rgb(220, 165, 147);
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    display: none;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -23,12 +32,40 @@
       float: left;
       text-align: right;
       clear: both;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        right: -6px;
+        width: 10px;
+        height: 10px;
+        background: #ebaa92;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px rgba(220, 165, 147, 0.3)
+      }
     }
 
     &:nth-child(even) {
       float: right;
       text-align: left;
       clear: both;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        background: #ebaa92;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px rgba(220, 165, 147, 0.3)
+      }
     }
+  }
+
+  .content {
+    padding-bottom: 20px;
   }
 }
