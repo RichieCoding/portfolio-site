@@ -1,6 +1,7 @@
 import React from 'react'
 import './shoppie-page.styles.scss'
 import Shoppie from '../../assets/images/main-shoppie-02.png'
+import Timeline from '../../components/Timeline/Timeline'
 
 const ShoppiePage = () => {
   return (
@@ -34,6 +35,7 @@ const ShoppiePage = () => {
         </div>
       </div>
       <hr></hr>
+      <Timeline />
     </div>
   )
 }
