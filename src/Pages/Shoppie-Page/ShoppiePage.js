@@ -35,7 +35,7 @@ const ShoppiePage = () => {
         </div>
       </div>
       <hr></hr>
-      <h2>TechStack</h2>
+      <h2 className='timeline-title'>TechStack</h2>
       <Timeline />
     </div>
   )
