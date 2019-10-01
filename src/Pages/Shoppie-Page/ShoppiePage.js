@@ -2,6 +2,7 @@ import React from 'react'
 import './shoppie-page.styles.scss'
 import Shoppie from '../../assets/images/main-shoppie-02.png'
 import Timeline from '../../components/Timeline/Timeline'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ShoppiePage = () => {
   return (
@@ -36,7 +37,9 @@ const ShoppiePage = () => {
       </div>
       <hr></hr>
       <h2 className='timeline-title'>TechStack</h2>
-      <Timeline />
+      <ScrollAnimation animateIn="fadeIn">
+        <Timeline />
+      </ScrollAnimation>
     </div>
   )
 }

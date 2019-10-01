@@ -1,6 +1,8 @@
 import React from "react";
 import "./timeline.styles.scss";
 import TimelineInfo from "../Timeline-Info/TimelineInfo";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const Timeline = () => {
   return (
