@@ -2,6 +2,8 @@ import React from 'react'
 import './critter-page.styles.scss'
 import Critter from '../../assets/images/Critter05-01.png'
 import Logo from '../../assets/images/CritterTest.png'
+import TimelineCritter from '../../components/Timeline-Critter/TimelineCritter';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const CritterPage = () => {
   return (
@@ -20,11 +22,12 @@ const CritterPage = () => {
           <img className='critter-logo' src={Logo} alt="logo"/>
           <p>A twitter feed clone where the critters of NYC can post their thoughts and have other critters respond to it. Search for other critters and view their profile and thoughts.</p>
         </div>
-        <div className='credentials'>
-          
-        </div>
       </div>
       <hr></hr>
+      <h2 className='timeline-title'>TechStack</h2>
+      <ScrollAnimation animateIn="fadeIn">
+        <TimelineCritter />
+      </ScrollAnimation>
     </div>
   )
 }

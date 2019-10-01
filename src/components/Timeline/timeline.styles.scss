@@ -4,13 +4,15 @@
   // padding: 10px 0;
   width: 1000px;
 
-  h3 {
+  .single-time-title {
     color: rgb(220, 165, 147);
+    display: inline-block;
     margin-bottom: 5px;
-  }
-
-  h4 {
-    display: none;
+    // border: 1px solid #e7a790;
+    border-radius: 15px;
+    padding: 7px;
+    color: white;
+    background: #e7a790;
   }
 
   &:before {
@@ -36,7 +38,7 @@
       &:before {
         content: '';
         position: absolute;
-        top: 24px;
+        top: 32px;
         right: -6px;
         width: 10px;
         height: 10px;
@@ -54,7 +56,7 @@
       &:before {
         content: '';
         position: absolute;
-        top: 24px;
+        top: 32px;
         left: -5px;
         width: 10px;
         height: 10px;
@@ -70,9 +72,11 @@
   }
 }
 
+// Chello Timeline
 .timeline-chello {
-  h3 {
-    color: navy;
+  .single-time-title {
+    color: white;
+    background: navy;
   }
 
   ul li {
@@ -87,6 +91,31 @@
       &:before {
         background: navy;
         box-shadow: 0 0 0 3px rgba(52, 65, 243, 0.3)
+      }
+    }
+
+  }
+}
+
+//Critter Timeline
+.timeline-critter {
+  .single-time-title {
+    color: white;
+    background: rgb(100, 163, 214);;
+  }
+
+  ul li {
+    &:nth-child(odd) {
+      &:before {
+        background: rgb(100, 163, 214);;
+        box-shadow: 0 0 0 3px rgba(100, 163, 214, 0.3)
+      }
+    }
+
+    &:nth-child(even) {
+      &:before {
+        background: rgb(100, 163, 214);
+        box-shadow: 0 0 0 3px rgba(100, 163, 214, 0.3);
       }
     }
 
