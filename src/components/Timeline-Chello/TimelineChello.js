@@ -1,10 +1,9 @@
 import React from "react";
-import "./timeline.styles.scss";
 import TimelineInfo from "../Timeline-Info/TimelineInfo";
 
-const Timeline = () => {
+const TimelineChello = () => {
   return (
-    <div className='timeline'>
+    <div className='timeline timeline-chello'>
       <ul>
         <TimelineInfo
           title='React.js'
@@ -14,7 +13,7 @@ const Timeline = () => {
           title='Ruby on Rails'
           description='Developed an API using Ruby on Rails. Using restful routes to fetch data from the front end. '
         />
-        <TimelineInfo title='SCSS' description='Styled using CSS preprocessor' />
+        <TimelineInfo title='CSS' description='Styled using vanilla CSS' />
         <TimelineInfo title='PostgreSQL' description='Used object relational models for users, products, cart.' />
         <div style={{ clear: "both" }}></div>
       </ul>
@@ -22,4 +21,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default TimelineChello;

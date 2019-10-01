@@ -69,3 +69,26 @@
     padding-bottom: 20px;
   }
 }
+
+.timeline-chello {
+  h3 {
+    color: navy;
+  }
+
+  ul li {
+    &:nth-child(odd) {
+      &:before {
+        background: navy;
+        box-shadow: 0 0 0 3px rgba(52, 65, 243, 0.3)
+      }
+    }
+
+    &:nth-child(even) {
+      &:before {
+        background: navy;
+        box-shadow: 0 0 0 3px rgba(52, 65, 243, 0.3)
+      }
+    }
+
+  }
+}
