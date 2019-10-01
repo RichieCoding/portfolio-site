@@ -1,7 +1,8 @@
 import React from 'react'
 import './chello-page.styles.scss'
 import Shoppie from '../../assets/images/main-chello-02.png'
-import TimelineChello from '../../components/Timeline-Chello/TimelineChello'
+import TimelineChello from '../../components/Timeline-Chello/TimelineChello';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ChelloPage = () => {
   return (
@@ -30,7 +31,9 @@ const ChelloPage = () => {
       </div>
       <hr></hr>
       <h2 className='timeline-title'>TechStack</h2>
-      <TimelineChello />
+      <ScrollAnimation animateIn="fadeIn">
+        <TimelineChello />
+      </ScrollAnimation>
     </div>
   )
 }
