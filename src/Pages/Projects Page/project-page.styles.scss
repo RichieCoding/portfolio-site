@@ -13,12 +13,12 @@
     height: 100%;
     width: 94%;
     // background: black;
-    max-width: 1200px;
+    max-width: 1150px;
     // max-height: 100vh;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     // grid-template-rows: 1fr 1fr;
-    // grid-gap: 15px;
+    grid-gap: 25px;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
