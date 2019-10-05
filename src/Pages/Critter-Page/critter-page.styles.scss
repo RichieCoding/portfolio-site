@@ -132,3 +132,14 @@
   }
   
 }
+
+@media (max-width: 767px) {
+  .critter-page {
+    .timeline-title {
+      text-align: left;
+      margin-bottom: 15px;
+
+    }
+  }
+  
+}
