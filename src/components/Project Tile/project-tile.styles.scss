@@ -47,7 +47,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: white;
+      background-color: rgb(235,224,217);
       z-index: 99;
       opacity: 0;
       transition: opacity .2s ease-out;
@@ -55,8 +55,14 @@
 
       .hover-title {
         display: block;
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
+        color: rgb(67,38,235);
+      }
+
+      .hover-description {
+        text-align: center;
+        margin-top: 15px;
         color: black;
       }
     }
