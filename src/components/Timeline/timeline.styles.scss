@@ -73,6 +73,38 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .timeline {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline {
+    width: 100%;
+
+    &:before {
+      left: 20px;
+    }
+
+    ul li {
+      &:nth-child(odd),
+      &:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        // padding-bottom: 50px;
+      }
+
+      &:nth-child(odd):before,
+      &:nth-child(even):before {
+        top: 29px;
+        left: 16px;
+      }
+    }
+  }
+}
+
 // Chello Timeline
 .timeline-chello {
   .single-time-title {
@@ -121,34 +153,28 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .timeline {
-    width: 100%;
+// oKupid Timeline
+.timeline-okupid {
+  .single-time-title {
+    color: white;
+    background: #ebaa92;
   }
-}
 
-@media (max-width: 767px) {
-  .timeline {
-    width: 100%;
-
-    &:before {
-      left: 20px;
+  ul li {
+    &:nth-child(odd) {
+      &:before {
+        background: #ebaa92;
+        box-shadow: 0 0 0 3px rgba(220, 165, 147, 0.3);
+      }
     }
 
-    ul li {
-      &:nth-child(odd),
-      &:nth-child(even) {
-        width: 100%;
-        text-align: left;
-        padding-left: 50px;
-        // padding-bottom: 50px;
-      }
-
-      &:nth-child(odd):before,
-      &:nth-child(even):before {
-        top: 29px;
-        left: 16px;
+    &:nth-child(even) {
+      &:before {
+        background: #ebaa92;
+        box-shadow: 0 0 0 3px rgba(220, 165, 147, 0.3);
       }
     }
   }
 }
+
+
