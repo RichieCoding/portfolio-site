@@ -10,9 +10,14 @@
   
   .project-title {
     margin: 15px 0 10px 0;
+    color: black;
   }  
 
   .hover-title {
+    display: none;
+  }
+
+  .hover-description {
     display: none;
   }
 }
@@ -61,6 +66,7 @@
       }
 
       .hover-description {
+        display: block;
         text-align: center;
         margin-top: 15px;
         color: black;
