@@ -1,7 +1,7 @@
 import React from 'react'
 import './okupid-page.styles.scss'
 import Okupid from '../../assets/images/oKupid-page.png'
-import Timeline from '../../components/Timeline/Timeline'
+import Timeline from '../../components/Timeline-Okupid/Timeline-Okupid'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const ShoppiePage = () => {
@@ -23,7 +23,7 @@ const ShoppiePage = () => {
         </div>
         <div className='credentials'>
           <div style={{margin: '20px 0'}}>
-            <h4 className='side-title'>Admin</h4>
+            <h4 className='side-title'>Login</h4>
             <p>Username: batman</p>
             <p>Password: abc123</p>
           </div>
