@@ -1,15 +1,22 @@
 .header {
-
   a {
     text-decoration: none;
 
     &:visited {
       color: black;
+      // color: rgb(67,38,235);
     }
   }
 
   .header-logo {
     font-size: 1.4em;
+    font-weight: bold;
+
+    a {
+      &:visited {
+        color: rgb(67, 38, 235);
+      }
+    }
   }
 
   .header-nav-items {
