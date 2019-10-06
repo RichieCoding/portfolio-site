@@ -64,7 +64,10 @@
         font-family: 'Emilys Candy', cursive;
         font-size: 4em;
         text-align: center;
-        color: rgb(66, 87, 184);
+        // color: linear-gradient(to right, #e7a790, #e29e88, #dc9580, #d78d78, #d18471);
+        background: -webkit-linear-gradient(#e7a790, #d4694e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         opacity: 0.8;
       }
     }
@@ -72,7 +75,8 @@
     .credentials {
       display: flex;
       margin: 0 auto;
-      justify-content: space-between;
+      justify-content: center;
+      text-align: center;
     }
   
   }
