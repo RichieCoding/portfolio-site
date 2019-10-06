@@ -7,9 +7,9 @@ const ProjectTile = ({image, title, description}) => {
     <Link to={`/projects/${title}`}><div className='project-tile'>
       <h3 className='project-title'>{title}</h3>
       <img className='project-image' src={image} alt="project" />
-      <p>{description}</p>
       <div className='top'>
         <h2 className='hover-title'>{title}</h2>
+        <p className='hover-description'>{description}</p>
       </div>
     </div></Link>
   )
