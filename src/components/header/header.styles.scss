@@ -39,6 +39,11 @@
     margin-left: 15px;
   }
 
+  .active a {
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(67,38,235)
+  }
+
   .menu-icon {
     // display: none;
     cursor: pointer;
