@@ -19,12 +19,18 @@ class App extends Component {
     });
   };
 
+  handleNameClick = () => {
+    this.setState({
+      menuOpen: false
+    })
+  }
+
   render() {
     return (
       <>
         <Header
-          handleMenuClicked={this.handleMenuClicked}
           handleMenuOpen={this.handleMenuOpen}
+          handleNameClick={this.handleNameClick}
           isOpen={this.state.menuOpen}
         />
         <Switch>

@@ -1,3 +1,5 @@
+$main-theme: rgb(128, 233, 205);
+
 .shoppie-page {
   // width: 90%;
   // max-width: 1200px;
@@ -42,7 +44,7 @@
 
         &:hover {
           opacity: 1;
-          color: #e7a790;
+          color: $main-theme;
         }
       }
     }
@@ -65,7 +67,7 @@
         font-size: 4em;
         text-align: center;
         // color: linear-gradient(to right, #e7a790, #e29e88, #dc9580, #d78d78, #d18471);
-        background: -webkit-linear-gradient(#e7a790, #d4694e);
+        background: -webkit-linear-gradient(#aef8dc, #4dc79e);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0.8;
