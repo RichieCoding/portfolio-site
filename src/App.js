@@ -10,24 +10,25 @@ import OKupidPage from "./Pages/oKupid-Page/OKupidPage"
 
 class App extends Component {
   state = {
-    menuClicked: false
+    menuOpen: false
   };
 
-  handleMenuClicked = () => {
-    this.setState(prevState => {
-      return { menuClicked: !prevState.menuClicked };
-    });
-  };
+  handleMenuOpen = () => {
+    this.setState(prevState=> {
+      return { menuOpen: !prevState.menuOpen}
+    })
+  }
 
   render() {
     return (
       <>
         <Header
           handleMenuClicked={this.handleMenuClicked}
-          menuClicked={this.state.menuClicked}
+          handleMenuOpen={this.handleMenuOpen}
+          isOpen={this.state.menuOpen}
         />
         <Switch>
-        { this.state.menuClicked ? <MenuPage handleMenuClicked={this.handleMenuClicked} /> : null}
+        { this.state.menuOpen ? <MenuPage menuClicked={this.handleMenuOpen}/> : null}   
         <Route exact path ='/projects' component={ProjectPage} />
         <Route exact path ='/' component={ProjectPage} />
         <Route exact path ='/projects/Shoppie' component={ShoppiePage} />
