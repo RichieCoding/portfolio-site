@@ -5,15 +5,13 @@
   width: 1000px;
 
   .single-time-title {
-    color: rgb(220, 165, 147);
     display: inline-block;
     margin-bottom: 5px;
-    // border: 1px solid #e7a790;
     font-size: 1.05em;
     border-radius: 15px;
     padding: 7px;
     color: white;
-    background: rgb(128, 233, 205);
+    background: rgb(53, 233, 185);
   }
 
   &:before {
@@ -43,9 +41,9 @@
         right: -6px;
         width: 10px;
         height: 10px;
-        background: rgb(128, 233, 205);
+        background: rgb(53, 233, 185);
         border-radius: 50%;
-        box-shadow: 0 0 0 3px rgba(128, 233, 205, 0.3);
+        box-shadow: 0 0 0 3px rgba(53, 233, 185, 0.3);
       }
     }
 
@@ -61,9 +59,9 @@
         left: -5px;
         width: 10px;
         height: 10px;
-        background: rgb(128, 233, 205);
+        background: rgb(53, 233, 185);
         border-radius: 50%;
-        box-shadow: 0 0 0 3px rgba(128, 233, 205, 0.3);
+        box-shadow: 0 0 0 3px rgba(53, 233, 185, 0.3);
       }
     }
   }
