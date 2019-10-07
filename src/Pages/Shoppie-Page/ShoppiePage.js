@@ -1,6 +1,6 @@
 import React from 'react'
 import './shoppie-page.styles.scss'
-import Shoppie from '../../assets/images/main-shoppie-02.png'
+import Shoppie from '../../assets/images/main-shoppie.png'
 import Timeline from '../../components/Timeline/Timeline'
 import ScrollAnimation from 'react-animate-on-scroll';
 
