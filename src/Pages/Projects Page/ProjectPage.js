@@ -9,7 +9,7 @@ import ProjectTile from "../../components/Project Tile/ProjectTile";
 const ProjectPage = () => {
   return (
     <div className='project-page'>
-      <ProjectTile image={Shoppie} title='Shoppie' description="Shopify Clone" />
+      <ProjectTile image={Shoppie} title='Shoppie' description="Ecommerce App" />
       <ProjectTile image={Chello} title='Chello' />
       <ProjectTile image={Critter} title='Critter' />
       <ProjectTile image={Shoppie4} title='oKupid' />
