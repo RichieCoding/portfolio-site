@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <header className='header'>
       <nav className='header-nav'>
-        <div className='header-logo'>
+        <div onClick={props.handleNameClick} className='header-logo'>
           <Link to='/'>Richard Li</Link>
         </div>
         <div className='header-nav-items'>
