@@ -7,6 +7,7 @@ import ShoppiePage from "./Pages/Shoppie-Page/ShoppiePage";
 import ChelloPage from "./Pages/Chello-Page/ChelloPage";
 import CritterPage from "./Pages/Critter-Page/CritterPage";
 import OKupidPage from "./Pages/oKupid-Page/OKupidPage";
+import AboutPage from "./Pages/About-Page/AboutPage";
 
 class App extends Component {
   state = {
@@ -43,6 +44,7 @@ class App extends Component {
           <Route exact path='/projects/Chello' component={ChelloPage} />
           <Route exact path='/projects/Critter' component={CritterPage} />
           <Route exact path='/projects/oKupid' component={OKupidPage} />
+          <Route exact path='/about' component={AboutPage} />
         </Switch>
       </>
     );
