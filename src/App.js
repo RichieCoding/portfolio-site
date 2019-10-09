@@ -39,7 +39,7 @@ class App extends Component {
             <MenuPage menuClicked={this.handleMenuOpen} />
           ) : null}
           <Route exact path='/projects' component={ProjectPage} />
-          <Route exact path='/' component={ProjectPage} />
+          <Route exact path='/' component={AboutPage} />
           <Route exact path='/projects/Shoppie' component={ShoppiePage} />
           <Route exact path='/projects/Chello' component={ChelloPage} />
           <Route exact path='/projects/Critter' component={CritterPage} />
