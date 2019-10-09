@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./about-page.styles.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
+
 
 class AboutPage extends Component {
   handleScroll = e => {
@@ -10,7 +13,18 @@ class AboutPage extends Component {
   render() {
     return (
       <div className='about-page' onScroll={this.handleScroll}>
-        <div className='main-purple-box'></div>
+        <div className='main-purple-box'>
+          <div className="arrow-icon">
+          {/* <FontAwesomeIcon icon={faSortDown} size="2x"/> */}
+          <p>S</p>
+          <p>C</p>
+          <p>R</p>
+          <p>O</p>
+          <p>L</p>
+          <p>L</p>
+          </div>
+        
+        </div>
         <div className='text'>
           <h2 className='text-name-intro'>Hi, I'm Richard</h2>
           <div className='header1'>
