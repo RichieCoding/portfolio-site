@@ -15,7 +15,7 @@ const Header = (props) => {
             <li >
               <Link to='/about'>About</Link>
             </li>
-            <li className='active'>
+            <li>
               <Link to='/projects'>Projects</Link>
             </li>
             <li>
