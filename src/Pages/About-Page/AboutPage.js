@@ -1,16 +1,57 @@
 import React, { Component } from "react";
 import "./about-page.styles.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
+
 
 class AboutPage extends Component {
+  state = {
+    scroll: false
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
   handleScroll = e => {
-    // const bottom = e.target.scrollHeight;
-    console.log("hello");
+    const bottom = e.target.scrollHeight;
+    if (window.scrollY !== 0) {
+      console.log('yay')
+      this.setState({
+        scroll: true
+      })
+    }
+    if (window.scrollY === 0) {
+      this.setState({
+        scroll: false
+      })
+    }
+    console.log(window.scrollY);
   };
 
   render() {
     return (
-      <div className='about-page' onScroll={this.handleScroll}>
-        <div className='main-purple-box'></div>
+      <div className='about-page'>
+        <div className='main-purple-box'>
+          { !this.state.scroll ?
+          <div className="arrow-icon">
+          {/* <FontAwesomeIcon icon={faSortDown} size="2x"/> */}
+          <p>S</p>
+          <p>C</p>
+          <p>R</p>
+          <p>O</p>
+          <p>L</p>
+          <p>L</p>
+          </div>
+          :
+          null
+          }
+        
+        </div>
         <div className='text'>
           <h2 className='text-name-intro'>Hi, I'm Richard</h2>
           <div className='header1'>
