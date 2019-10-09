@@ -125,7 +125,7 @@
 @media (min-width: 793px) and (max-width: 1103px) {
   .about-page {
     .main-purple-box {
-      min-height: 650px;
+      // min-height: 650px;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
@@ -151,19 +151,22 @@
 @media (min-width: 1104px) {
   .about-page {
     .main-purple-box {
-      min-height: 650px;
+      // min-height: 650px;
+      // min-height: 50%;
     }
     .text {
       .text-name-intro {
         font-size: 7em;
-        top: 20%;
+        top: 22%;
         left: 36%;
         transform: translate(-35%, -20%);
       }
 
       .header1 {
         .fullstack {
-          font-size: 10vw;
+          font-size: 9vw;
+
+          // max-height: 140px;
         }
       }
     }
