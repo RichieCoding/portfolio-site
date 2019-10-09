@@ -122,6 +122,16 @@
   }
 }
 
+@media (min-width: 582px) and (max-width: 792px) {
+  .about-page {
+    .text {
+      .text-name-intro {
+        font-size: 3.5em;
+      }
+    }
+  }
+}
+
 @media (min-width: 793px) and (max-width: 1103px) {
   .about-page {
     .main-purple-box {
@@ -207,9 +217,9 @@
     .text {
       .text-name-intro {
         // font-size: 6em;
-        top: 10%;
-        left: 29%;
-        transform: translate(-29%, -10%);
+        top: 12%;
+        left: 31%;
+        transform: translate(-30%, -10%);
       }
     }
 
