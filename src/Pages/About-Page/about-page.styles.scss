@@ -173,6 +173,31 @@
   }
 }
 
+@media (min-width: 1104px) and (min-height: 1000px) {
+  .about-page {
+    .main-purple-box {
+      // min-height: 650px;
+      // min-height: 50%;
+    }
+    .text {
+      .text-name-intro {
+        font-size: 6em;
+        top: 22%;
+        left: 36%;
+        transform: translate(-35%, -20%);
+      }
+
+      .header1 {
+        .fullstack {
+          font-size: 9.5vw;
+
+          // max-height: 140px;
+        }
+      }
+    }
+  }
+}
+
 @media (min-height: 813px) and (max-height: 900px) {
   .about-page {
     .main-purple-box {
@@ -191,6 +216,27 @@
     .header1 {
       .fullstack {
         font-size: 7.5vw;
+      }
+    }
+  }
+}
+
+@media (min-height: 1000px) {
+  .about-page {
+    // .main-purple-box {
+    //   background: red;
+    // }
+
+    .text {
+      .text-name-intro {
+        font-size: 7em;
+        
+      }
+    }
+
+    .header1 {
+      .fullstack {
+        font-size: 10vw;
       }
     }
   }
