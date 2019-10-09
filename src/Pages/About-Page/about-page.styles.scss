@@ -156,7 +156,7 @@
     }
     .text {
       .text-name-intro {
-        font-size: 7em;
+        font-size: 6em;
         top: 22%;
         left: 36%;
         transform: translate(-35%, -20%);
@@ -164,10 +164,33 @@
 
       .header1 {
         .fullstack {
-          font-size: 9vw;
+          font-size: 7.5vw;
 
           // max-height: 140px;
         }
+      }
+    }
+  }
+}
+
+@media (min-height: 813px) and (max-height: 900px) {
+  .about-page {
+    .main-purple-box {
+      height: 65%;
+    }
+
+    .text {
+      .text-name-intro {
+        // font-size: 6em;
+        top: 10%;
+        left: 29%;
+        transform: translate(-29%, -10%);
+      }
+    }
+
+    .header1 {
+      .fullstack {
+        font-size: 7.5vw;
       }
     }
   }
