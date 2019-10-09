@@ -12,7 +12,7 @@ const Header = (props) => {
         </div>
         <div className='header-nav-items'>
           <ul>
-            <li >
+            <li>
               <Link to='/about'>About</Link>
             </li>
             <li>
