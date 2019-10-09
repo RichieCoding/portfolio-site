@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./header.styles.scss";
 import { Link } from "react-router-dom";
 import HamburgerMenu from "react-hamburger-menu";
@@ -13,7 +13,7 @@ const Header = (props) => {
         <div className='header-nav-items'>
           <ul>
             <li>
-              <Link to='/about'>About</Link>
+              <Link to='/'>About</Link>
             </li>
             <li>
               <Link to='/projects'>Projects</Link>
