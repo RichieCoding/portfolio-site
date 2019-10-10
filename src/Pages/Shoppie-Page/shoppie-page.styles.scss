@@ -4,6 +4,9 @@ $main-theme: rgb(128, 233, 205);
   // width: 90%;
   // max-width: 1200px;
   // margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
 
   .timeline-title {
     // margin-top: 4em;
