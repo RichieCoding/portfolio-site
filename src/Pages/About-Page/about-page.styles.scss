@@ -16,6 +16,9 @@
       position: absolute;
       bottom: 0;
       right: -15px;
+      animation-name: moveInRight;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in;
     }
   }
 
@@ -30,6 +33,8 @@
       transform: translate(-35%, -23%);
       font-size: 2.1em;
       color: white;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
 
     .header1 {
@@ -40,6 +45,9 @@
 
       .fullstack {
         font-size: 4.5em;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        // animation-timing-function: ease-out;
       }
     }
  
@@ -65,6 +73,50 @@
     }
   }
 }
+
+//------ KEYFRAMES ------// 
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(210);
+  }
+}
+
+
+
+//------ MEDIA QUERIES ------// 
 
 @media (min-width: 582px) and (max-width: 792px) {
   .about-page {
