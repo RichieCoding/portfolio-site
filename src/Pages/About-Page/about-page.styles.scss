@@ -10,6 +10,17 @@
     width: 75%;
     background: rgb(67, 38, 235);
 
+    .intro-name {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2.1em;
+      color: white;
+      animation-name: moveInTop;
+      animation-duration: 1s;
+
+    }
+
     .arrow-icon {
       display: flex;
       flex-direction: column;
@@ -120,6 +131,12 @@
 
 @media (min-width: 582px) and (max-width: 792px) {
   .about-page {
+    .main-purple-box {
+      .intro-name {
+        font-size: 3.1em;
+      }
+    }
+
     .text {
       .text-name-intro {
         font-size: 3.5em;
@@ -141,6 +158,9 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      .intro-name {
+        font-size: 5.1em;
+      }
     }
 
     .text {
@@ -171,6 +191,9 @@
     .main-purple-box {
       // min-height: 650px;
       // min-height: 50%;
+      .intro-name {
+        font-size: 7.1em;
+      }
     }
     .text {
       .text-name-intro {
