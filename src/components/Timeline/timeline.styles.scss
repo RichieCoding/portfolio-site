@@ -107,21 +107,21 @@
 .timeline-chello {
   .single-time-title {
     color: white;
-    background: navy;
+    background: rgba(0, 0, 0, 0.829);
   }
 
   ul li {
     &:nth-child(odd) {
       &:before {
-        background: navy;
-        box-shadow: 0 0 0 3px rgba(52, 65, 243, 0.3);
+        background: rgb(0, 0, 0);
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
       }
     }
 
     &:nth-child(even) {
       &:before {
-        background: navy;
-        box-shadow: 0 0 0 3px rgba(52, 65, 243, 0.3);
+        background: black;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
       }
     }
   }
