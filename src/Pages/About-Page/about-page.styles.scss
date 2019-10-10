@@ -1,5 +1,7 @@
 .about-page {
   height: 91vh;
+  margin: 0 auto;
+  max-width: 1500px;
 
   .main-purple-box {
     position: fixed;
@@ -12,8 +14,8 @@
 
     .intro-name {
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 5%;
+      left: 5%;
       font-size: 2.1em;
       color: white;
       animation-name: moveInTop;
@@ -186,7 +188,7 @@
   }
 }
 
-@media (min-width: 1104px) {
+@media (min-width: 1104px) and (max-width: 1500px) {
   .about-page {
     .main-purple-box {
       // min-height: 650px;
@@ -373,5 +375,35 @@
       }
     }
     
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-page {
+    .main-purple-box {
+      max-width: 1000px;
+
+      .intro-name {
+        font-size: 6.5em;
+      }
+    }
+
+    .text {
+      .header1 {
+        top: 67%;
+        left: 20%;
+        transform: translate(-20%, -67%);
+        .fullstack {
+          font-size: 8em;
+        }
+      }
+    }
+
+    .text2 {
+      .header2 {
+        font-size: 2em;
+      }
+    }
+
   }
 }
