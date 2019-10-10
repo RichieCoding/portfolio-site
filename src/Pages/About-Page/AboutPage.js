@@ -38,6 +38,10 @@ class AboutPage extends Component {
       <div className='about-page'>
         <div className='main-purple-box'>
           { !this.state.scroll ?
+            <h2 className='intro-name'>Hi, I'm Richard</h2>
+          : null
+          }
+          { !this.state.scroll ?
           <div className="arrow-icon">
           {/* <FontAwesomeIcon icon={faSortDown} size="2x"/> */}
           <p>S</p>
@@ -53,7 +57,7 @@ class AboutPage extends Component {
         
         </div>
         <div className='text'>
-          <h2 className='text-name-intro'>Hi, I'm Richard</h2>
+          {/* <h2 className='text-name-intro'>Hi, I'm Richard</h2> */}
           <div className='header1'>
             <p className='fullstack'>a</p>
             <p className='fullstack'>full</p>
