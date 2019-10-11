@@ -1,63 +1,181 @@
 import React, { Component } from "react";
 import "./about-page.styles.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSortDown } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 class AboutPage extends Component {
   state = {
-    scroll: false
-  }
+    scroll: false,
+    bottom: false,
+    secondText: false
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = e => {
-    const bottom = e.target.scrollHeight;
+    // Checks if bottom of page
+    const windowHeight =
+      "innerHeight" in window
+        ? window.innerHeight
+        : document.documentElement.offsetHeight;
+    const body = document.body;
+    const html = document.documentElement;
+    const docHeight = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+    const windowBottom = windowHeight + window.pageYOffset;
+    if (windowBottom >= docHeight) {
+      console.log("bottom");
+      this.setState({
+        bottom: true
+      });
+    } else {
+      this.setState({
+        bottom: false
+      });
+    }
+
+    // Checks if not top of page
     if (window.scrollY !== 0) {
-      console.log('yay')
       this.setState({
         scroll: true
-      })
+      });
     }
+
+    // Checks if top of page
     if (window.scrollY === 0) {
       this.setState({
         scroll: false
-      })
+      });
     }
     console.log(window.scrollY);
+  };
+
+  handleSecondText = () => {
+    this.setState(prevState => {
+      return { secondText: !prevState.secondText };
+    });
+    console.log("hello");
+  };
+
+  renderBio = () => {
+    if (!this.state.secondText) {
+      return (
+        <p className='main-bio header2'>
+          I am a developer based in New York City. I have a passion for web
+          design / development and love to bring creative and fun ideas to life.
+        </p>
+      );
+    } else {
+      return (
+        <p className='second-bio header2'>
+          I also love Brazilian Jiu Jitsu and am currently a purple belt.
+        </p>
+      );
+    }
+  };
+
+  renderArrow = () => {
+    if (!this.state.secondText) {
+      return (
+        <div className='three-arrows' onClick={this.handleSecondText}>
+          <FontAwesomeIcon
+            className='arrow-right'
+            icon={faChevronRight}
+            size='md'
+          />
+          {/* <FontAwesomeIcon
+            className='arrow-right'
+            icon={faChevronRight}
+            size='md'
+          />
+          <FontAwesomeIcon
+            className='arrow-right'
+            icon={faChevronRight}
+            size='md'
+          /> */}
+        </div>
+      );
+    } else {
+      return (
+        <div className='three-arrows' onClick={this.handleSecondText}>
+          <FontAwesomeIcon
+            className='arrow-left'
+            icon={faChevronLeft}
+            size='md'
+          />
+          {/* <FontAwesomeIcon
+            className='arrow-left'
+            icon={faChevronLeft}
+            size='md'
+          />
+          <FontAwesomeIcon
+            className='arrow-left'
+            icon={faChevronLeft}
+            size='md'
+          /> */}
+        </div>
+      );
+    }
   };
 
   render() {
     return (
       <div className='about-page'>
         <div className='main-purple-box'>
-          { !this.state.scroll ?
+          {!this.state.scroll ? (
             <h2 className='intro-name'>Hi, I'm Richard</h2>
-          : null
-          }
-          { !this.state.scroll ?
-          <div className="arrow-icon">
-          {/* <FontAwesomeIcon icon={faSortDown} size="2x"/> */}
-          <p>S</p>
-          <p>C</p>
-          <p>R</p>
-          <p>O</p>
-          <p>L</p>
-          <p>L</p>
-          </div>
-          :
-          null
-          }
-        
+          ) : null}
+          {!this.state.scroll ? (
+            <div className='arrow-icon'>
+              <p>S</p>
+              <p>C</p>
+              <p>R</p>
+              <p>O</p>
+              <p>L</p>
+              <p>L</p>
+            </div>
+          ) : null}
+          {this.state.bottom ? this.renderArrow() : null}
+          {this.state.bottom ? (
+            <Link to='/projects'><div className='view-projects'>
+              <p>P</p>
+              <p>R</p>
+              <p>O</p>
+              <p>J</p>
+              <p>E</p>
+              <p>C</p>
+              <p>T</p>
+              <p>S</p>
+            </div>
+            </Link>
+          ) : null}
+          {this.state.bottom ? (
+            <Link to='/contact'><div className='view-contact'>
+              <p>C</p>
+              <p>O</p>
+              <p>N</p>
+              <p>T</p>
+              <p>A</p>
+              <p>C</p>
+              <p>T</p>
+            </div>
+            </Link>
+          ) : null}
         </div>
         <div className='text'>
-          {/* <h2 className='text-name-intro'>Hi, I'm Richard</h2> */}
           <div className='header1'>
             <p className='fullstack'>a</p>
             <p className='fullstack'>full</p>
@@ -68,14 +186,7 @@ class AboutPage extends Component {
             <p>a full stack developer</p>
           </div>
         </div>
-        <div className='text2'>
-          <p className='header2'>
-            I have experience with JavaScript, React/Redux, HTML/CSS, Ruby on
-            Rails. I discovered Software Development through my love for Brazilian Jiu Jitsu and how similar they are with problem solving and learning. I gave it
-            and a try and I absolutely fell in love with coding. I also enjoy
-            meeting and conversing with people so feel free to connect and chat.
-          </p>
-        </div>
+        <div className='text2'>{this.renderBio()}</div>
       </div>
     );
   }
