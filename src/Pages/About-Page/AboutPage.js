@@ -73,15 +73,19 @@ class AboutPage extends Component {
   renderBio = () => {
     if (!this.state.secondText) {
       return (
-        <p className='main-bio header2'>
+        <div>
+          <p className='main-bio header2'>
           I am a developer based in New York City. I have a passion for web
-          design / development and love to bring creative and fun ideas to life.
-        </p>
+          design / development and love to bring creative and fun ideas to life.{this.state.bottom ? <span onClick={this.handleSecondText}>MORE</span>: null}
+          </p>
+        </div>
+        
       );
     } else {
       return (
         <p className='second-bio header2'>
           I also train and teach Brazilian Jiu Jitsu and currently a purple belt. If you want to work together or train together let's chat!
+          {this.state.bottom ? <span onClick={this.handleSecondText}>BACK</span>: null}
         </p>
       );
     }
@@ -148,7 +152,7 @@ class AboutPage extends Component {
               <p>L</p>
             </div>
           ) : null}
-          {this.state.bottom ? this.renderArrow() : null}
+          {/* {this.state.bottom ? this.renderArrow() : null} */}
           {this.state.bottom ? (
             <Link to='/projects'><div className='view-projects'>
               <p>P</p>
