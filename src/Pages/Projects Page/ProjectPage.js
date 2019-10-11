@@ -8,12 +8,15 @@ import ProjectTile from "../../components/Project Tile/ProjectTile";
 
 const ProjectPage = () => {
   return (
+    <>
     <div className='project-page'>
       <ProjectTile image={Shoppie} title='Shoppie' description="Ecommerce App" />
       <ProjectTile image={Chello} title='Chello' description="Trello Clone"/>
       <ProjectTile image={Critter} title='Critter' description="Twitter Feed Clone"/>
       <ProjectTile image={Shoppie4} title='oKupid' description="Dating App"/>
     </div>
+    <footer></footer>
+    </>
   );
 };
 
