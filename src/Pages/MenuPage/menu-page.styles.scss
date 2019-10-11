@@ -7,10 +7,15 @@
   font-size: 2.2em;
   font-family: 'Playfair Display', serif;
 
+
   a {
     text-decoration: none;
     // color: rgb(67,38,235);
     color: black;
+  }
+
+  .active h3 {
+    color: rgb(67,38,235);
   }
 
   h3 {
