@@ -20,19 +20,63 @@
       color: white;
       animation-name: moveInTop;
       animation-duration: 1s;
-
+      user-select: none;
     }
+
+    .three-arrows {
+      // color: rgba(255, 255, 255, 0.301);
+      // color: rgb(67, 38, 235);
+      color: rgba(255, 255, 255, 0.692);
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      animation: arrowRight 1s;
+    }
+
 
     .arrow-icon {
       display: flex;
       flex-direction: column;
+      user-select: none;
       position: absolute;
       bottom: 0;
       right: -15px;
-      animation-name: moveInRight;
-      animation-duration: 1.2s;
-      animation-timing-function: ease-in;
+      animation: moveInRight 1.2s ease-in;
     }
+
+    .view-projects {
+      position: absolute;
+      top: 50%;
+      right: -22px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      user-select: none;
+      color: black;
+      padding-right: 5px;
+      border-right: 2px solid transparent;
+      animation: viewProject 1s ease-in;
+
+      &:hover {
+        // color: rgb(67, 38, 235);
+        border-right: 2px solid rgb(67, 38, 235);
+      }
+    }
+
+    .view-contact {
+      position: absolute;
+      top: 50%;
+      left: -22px;
+      transform: translateY(-50%);
+      color: black;
+      padding-left: 5px;
+      border-left: 2px solid transparent;
+      animation: viewProject 1s ease-in;
+
+      &:hover {
+        border-left: 2px solid rgb(67, 38, 235)
+      }
+    }
+
   }
 
   .text {
@@ -46,8 +90,7 @@
       transform: translate(-35%, -23%);
       font-size: 2.1em;
       color: white;
-      animation-name: moveInTop;
-      animation-duration: 1s;
+      animation: moveInTop 1s;
     }
 
     .header1 {
@@ -58,8 +101,8 @@
 
       .fullstack {
         font-size: 4.5em;
-        animation-name: moveInLeft;
-        animation-duration: 1s;
+        animation: moveInLeft 1s;
+        user-select: none;
         // animation-timing-function: ease-out;
       }
     }
@@ -75,6 +118,9 @@
 
   .text2 {
     height: 90vh;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 2;
     position: relative;
 
     .header2 {
@@ -82,13 +128,19 @@
       top: 45%;
       left: 50%;
       transform: translate(-50%, -48%);
+      // text-align: center;
       color: white;
+      animation: mainText 1s;
+    }
+
+    .second-bio {
+      animation: mainText 1s;
     }
   }
 }
 
 //------ KEYFRAMES ------// 
-
+// fullstack text
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -105,6 +157,7 @@
   }
 }
 
+// Scroll text
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -115,6 +168,7 @@
   }
 }
 
+// Intro name text
 @keyframes moveInTop {
   0% {
     opacity: 0;
@@ -126,6 +180,40 @@
     transform: translate(210);
   }
 }
+
+// Right arrow icon
+@keyframes arrowRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes mainText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes viewProject {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 
