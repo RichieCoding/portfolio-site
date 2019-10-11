@@ -131,6 +131,15 @@
       // text-align: center;
       color: white;
       animation: mainText 1s;
+
+      span {
+        color: pink;
+        text-align: right;
+        float: right;
+        margin-top: 30px;
+        cursor: pointer;
+        animation: arrowRight 1s;
+      }
     }
 
     .second-bio {
