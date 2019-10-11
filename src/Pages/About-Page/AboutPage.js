@@ -81,7 +81,7 @@ class AboutPage extends Component {
     } else {
       return (
         <p className='second-bio header2'>
-          I also love Brazilian Jiu Jitsu and am currently a purple belt.
+          I also train and teach Brazilian Jiu Jitsu and am currently a purple belt. If you want to work together or train together let's chat!
         </p>
       );
     }
