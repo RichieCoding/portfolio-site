@@ -10,7 +10,7 @@
   }
 
   .header-logo {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: bold;
 
     a {
@@ -26,8 +26,14 @@
 
     .active {
       color: rgb(67, 38, 235);
+      // text-decoration: line-through;
       // padding-bottom: 5px;
       // border-bottom: 2px solid rgb(67, 38, 235);
+    }
+    li a:hover {
+      text-decoration: line-through;
+      text-decoration-color: rgb(67, 38, 235);
+      text-decoration-color: rgb(241, 53, 157);
     }
   }
 
@@ -38,12 +44,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
-    font-size: 1em;
   }
 
   ul li {
     display: inline-block;
     margin-left: 15px;
+    font-size: 1.2em;
   }
 
   .active a {
