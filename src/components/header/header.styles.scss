@@ -23,6 +23,12 @@
 
   .header-nav-items {
     display: none;
+
+    .active {
+      color: rgb(67, 38, 235);
+      // padding-bottom: 5px;
+      // border-bottom: 2px solid rgb(67, 38, 235);
+    }
   }
 
   .header-nav {
