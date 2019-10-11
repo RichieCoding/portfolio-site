@@ -17,7 +17,7 @@
       top: 5%;
       left: 5%;
       font-size: 2.1em;
-      color: white;
+      color: rgb(235,224,217);
       animation-name: moveInTop;
       animation-duration: 1s;
       user-select: none;
@@ -129,7 +129,7 @@
       left: 50%;
       transform: translate(-50%, -48%);
       // text-align: center;
-      color: white;
+      color: rgb(235,224,217);
       animation: mainText 1s;
 
       span {
@@ -139,6 +139,10 @@
         margin-top: 30px;
         cursor: pointer;
         animation: arrowRight 1s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
