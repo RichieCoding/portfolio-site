@@ -1,9 +1,16 @@
 import React from "react";
 import "./header.styles.scss";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import HamburgerMenu from "react-hamburger-menu";
 
 const Header = (props) => {
+  const checkActive = (match, location) => {
+    //some additional logic to verify you are in the home URI
+    if(!location) return false;
+    const {pathname} = location;
+    console.log(pathname);
+    return pathname === "/";
+  }
   return (
     <header className='header'>
       <nav className='header-nav'>
@@ -13,13 +20,13 @@ const Header = (props) => {
         <div className='header-nav-items'>
           <ul>
             <li>
-              <Link to='/'>About</Link>
+              <NavLink activeClassName='active' isActive={checkActive} to='/'>About</NavLink>
             </li>
             <li>
-              <Link to='/projects'>Projects</Link>
+              <NavLink activeClassName='active' to='/projects'>Projects</NavLink>
             </li>
             <li>
-              <Link to='/contact'>Contact</Link>
+              <NavLink activeClassName='active' to='/contact'>Contact</NavLink>
             </li>
           </ul>
         </div>
