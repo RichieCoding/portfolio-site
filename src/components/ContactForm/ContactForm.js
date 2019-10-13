@@ -56,7 +56,7 @@ export class ContactForm extends Component {
       <>
       {!this.state.sent ?
       <form className='contact-form'>
-        {this.state.submittedEmpty ? <p className='error-message'>Please enter into all fields</p> : null }
+        {/* {this.state.submittedEmpty ? <p className='error-message'>Please enter into all fields</p> : null } */}
         <div className='form-inputs'>
           <input
             type='text'
@@ -84,7 +84,7 @@ export class ContactForm extends Component {
           value={this.state.message}
           onChange={this.handleChange}
         ></textarea>
-        <input className='submit-btn' type='button' value='Send' onClick={this.handleSubmit} /> 
+        <input className='submit-btn' type='button' value='Send' onClick={this.handleSubmit} /> {this.state.submittedEmpty ? <span className='error-message'>Please enter into all fields</span> : null }
       </form> : <h3>Thank you, Message Sent</h3> }
       </>
     );
