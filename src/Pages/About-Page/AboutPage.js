@@ -84,7 +84,7 @@ class AboutPage extends Component {
     } else {
       return (
         <p className='second-bio header2'>
-          I also train and teach Brazilian Jiu Jitsu and currently a purple belt. If you want to work together or train together let's chat!
+          I have experience in React, Javascript, HTML/CSS, Ruby on Rails and PostgreSQL. On my free time I like to train and teach Brazilian Jiu Jitsu.
           {this.state.bottom ? <span onClick={this.handleSecondText}>BACK</span>: null}
         </p>
       );
