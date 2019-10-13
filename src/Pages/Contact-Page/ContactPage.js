@@ -1,14 +1,22 @@
 import React from 'react'
 import './contact-page.styles.scss'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import Linkedin from '../../assets/icons/linkedin.png'
+import Medium from '../../assets/icons/Monogram.png'
+import Github from '../../assets/icons/github.png'
 
 const ContactPage = () => {
   return (
     <div className='contact-page'>
       <div className="header">
-        <h3>Let's work together</h3>
+        <h3>Send a Message</h3>
         <ContactForm />
         <hr/>
+        <div className="contact-icons">
+          <a href="https://www.linkedin.com/in/richard-li-ny/" target="_blank"><img src={Linkedin} alt="linkedin" style={{width: '35px'}}/></a>
+          <a href="https://github.com/RichieCoding" target="_blank"><img src={Github} alt="linkedin" style={{width: '30px', height: '30px'}}/></a>
+          <a href="https://medium.com/@richardli125" target="_blank"><img src={Medium} alt="linkedin" style={{width: '30px', height: '30px'}}/></a>
+        </div>
       </div>
     </div>
   )
