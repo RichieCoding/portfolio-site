@@ -9,7 +9,6 @@ const ContactPage = () => {
   return (
     <div className='contact-page'>
       <div className="header">
-        <h3>Send a Message</h3>
         <ContactForm />
         <hr/>
         <div className="contact-icons">

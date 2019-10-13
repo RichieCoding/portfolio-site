@@ -2,9 +2,7 @@
   // width: 90%;
   // max-width: 1200px;
   // margin: 0 auto;
-  animation-name: fadeIn;
-  animation-duration: .5s;
-  animation-timing-function: ease-out;
+  animation: fadeIn .5s ease-out;
 
   .timeline-title {
     padding: 16px;

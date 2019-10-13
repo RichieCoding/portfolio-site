@@ -5,7 +5,7 @@
   .error-message {
     // text-align: center;
     font-size: 20px;
-    animation: fadeIn 2.3s ease-in-out;
+    animation: errorFadeIn 2.3s ease-in-out;
   }
 
   .form-inputs {
@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes errorFadeIn {
   0% {
     opacity: 0;
   }

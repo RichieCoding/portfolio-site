@@ -1,8 +1,7 @@
 .project-tile {
   margin-bottom: 20px;
-  animation-name: fadeIn;
-  animation-duration: .5s;
-  animation-timing-function: ease-out;
+  animation: fadeIn .5s ease-out;
+  
   .project-image {
     width: 100%;
     max-width: 450px;
