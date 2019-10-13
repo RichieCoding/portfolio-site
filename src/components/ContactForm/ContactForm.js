@@ -56,7 +56,6 @@ export class ContactForm extends Component {
       <>
       {!this.state.sent ?
       <form className='contact-form'>
-        {/* {this.state.submittedEmpty ? <p className='error-message'>Please enter into all fields</p> : null } */}
         <div className='form-inputs'>
           <input
             type='text'
