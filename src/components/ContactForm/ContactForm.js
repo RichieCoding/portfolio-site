@@ -64,6 +64,7 @@ export class ContactForm extends Component {
             placeholder='Name'
             required
             value={this.state.name}
+            className={this.state.submittedEmpty ? !this.state.name ? "input-error" : null : null}
             onChange={this.handleChange}
           />
           <input
@@ -72,6 +73,7 @@ export class ContactForm extends Component {
             placeholder='Email'
             required
             value={this.state.email}
+            className={this.state.submittedEmpty ? !this.state.email ? "input-error" : null : null}
             onChange={this.handleChange}
           />
         </div>
@@ -82,6 +84,7 @@ export class ContactForm extends Component {
           required
           placeholder='Message'
           value={this.state.message}
+          className={this.state.submittedEmpty ? !this.state.message ? "textarea-empty" : null : null}
           onChange={this.handleChange}
         ></textarea>
         <input className='submit-btn' type='button' value='Send' onClick={this.handleSubmit} /> {this.state.submittedEmpty ? <span className='error-message'>Please enter into all fields</span> : null }
