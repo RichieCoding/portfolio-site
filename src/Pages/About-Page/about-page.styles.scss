@@ -118,10 +118,18 @@
 
   .text2 {
     height: 90vh;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     z-index: 2;
     position: relative;
+
+    .test2 {
+      position: absolute;
+      bottom: 38%;
+      right: 26%;
+      font-size: 2.5vh;
+      color: pink;
+    }
 
     .header2 {
       position: absolute;
