@@ -76,7 +76,7 @@ class AboutPage extends Component {
         <div>
           <p className='main-bio header2'>
           I am a developer based in New York City. I have a passion for web
-          design / development and love to bring creative and fun ideas to life.{this.state.bottom ? <span onClick={this.handleSecondText}>MORE</span>: null}
+          development / design and love to bring creative and fun ideas to life.{this.state.bottom ? <span onClick={this.handleSecondText}>MORE</span>: null}
           </p>
         </div>
         
