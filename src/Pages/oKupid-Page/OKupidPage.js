@@ -20,7 +20,7 @@ const ShoppiePage = () => {
             <p>Demo</p>
           </a>
           <a
-            href='https://github.com/RichieCoding/Ecommerce-Front-End'
+            href='https://github.com/RichieCoding/oKupid'
             target='_blank'
             rel='noopener noreferrer'
           >
