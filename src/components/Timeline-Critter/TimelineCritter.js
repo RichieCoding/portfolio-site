@@ -7,14 +7,14 @@ const TimelineCritter = () => {
       <ul>
         <TimelineInfo
           title='Vanilla JavaScript'
-          description='Developed a Single Page Application with vanilla JS, creating a UI with Javascript.'
+          description='Developed a Single Page Application with vanilla JavaScript'
         />
         <TimelineInfo
           title='Ruby on Rails'
-          description='Developed an API using Ruby on Rails. Using restful routes to fetch data from the front end. '
+          description='Developed a Rails API backend with endpoints for users, tweets and replies'
         />
-        <TimelineInfo title='CSS' description='Styled using vanilla CSS' />
-        <TimelineInfo title='SQLite' description='Used object relational models for users, products, cart.' />
+        <TimelineInfo title='CSS3' description='Styled using vanilla CSS3' />
+        <TimelineInfo title='SQLite' description='Created object relational database to store and keep track of users, their thoughts, and replies' />
         <div style={{ clear: "both" }}></div>
       </ul>
     </div>
