@@ -18,7 +18,7 @@ const CritterPage = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <p>Demo</p>
+            <p>Video</p>
           </a>
           <a
             href='https://github.com/RichieCoding/Critter.com'
