@@ -13,7 +13,7 @@ const TimelineChello = () => {
           title='Ruby on Rails'
           description='Developed a Rails API backend with endpoints for users, projects, tasks and lists'
         />
-        <TimelineInfo title='CSS' description='Styled using vanilla CSS' />
+        <TimelineInfo title='CSS3' description='Styled using vanilla CSS3' />
         <TimelineInfo title='PostgreSQL' description="Created object relational database to store and keep track of user's projects, and tasks for your projects" />
         <TimelineInfo title='JSON Web Token' description='Utilized with local storage to store encrypted user information client-side and bcrypt server-side' />
         <div style={{ clear: "both" }}></div>
