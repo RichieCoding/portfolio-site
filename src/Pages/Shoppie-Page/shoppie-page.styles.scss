@@ -87,6 +87,10 @@ $main-theme: rgb(128, 233, 205);
     width: 35%;
     margin: 85px auto;
   }
+
+  .last-hr {
+    margin: 85px auto 40px;
+  }
 }
 
 
@@ -125,6 +129,10 @@ $main-theme: rgb(128, 233, 205);
         margin: 0 auto;
         justify-content: space-between;
       }
+    }
+
+    .last-hr {
+      margin: 85px auto;
     }
 
   }

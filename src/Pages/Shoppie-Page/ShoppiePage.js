@@ -3,6 +3,7 @@ import "./shoppie-page.styles.scss";
 import Shoppie from "../../assets/images/main-shoppie.png";
 import Timeline from "../../components/Timeline/Timeline";
 import ScrollAnimation from "react-animate-on-scroll";
+import ProjectNav from '../../components/ProjectNav/ProjectNav'
 
 const ShoppiePage = () => {
   return (
@@ -56,6 +57,11 @@ const ShoppiePage = () => {
       <ScrollAnimation animateIn='fadeIn'>
         <Timeline />
       </ScrollAnimation>
+      <hr className='last-hr'/>
+      <ScrollAnimation animateIn='fadeInRight' offset='50'>
+        <ProjectNav />
+      </ScrollAnimation>
+      
     </div>
   );
 };

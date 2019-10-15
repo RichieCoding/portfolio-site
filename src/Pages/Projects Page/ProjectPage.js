@@ -4,7 +4,7 @@ import Shoppie from "../../assets/images/shoppie-tile1.png";
 import Chello from "../../assets/images/chello-tile.png";
 import Critter from "../../assets/images/Critter-02.png";
 import Shoppie4 from "../../assets/images/oKupid.png";
-import ProjectTile from "../../components/Project Tile/ProjectTile";
+import ProjectTile from "../../components/ProjectTile/ProjectTile";
 
 const ProjectPage = () => {
   return (

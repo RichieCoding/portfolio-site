@@ -3,6 +3,7 @@ import "./okupid-page.styles.scss";
 import Okupid from "../../assets/images/oKupid-page.png";
 import Timeline from "../../components/Timeline-Okupid/Timeline-Okupid";
 import ScrollAnimation from "react-animate-on-scroll";
+import ProjectNav from "../../components/ProjectNav/ProjectNav";
 
 const ShoppiePage = () => {
   return (
@@ -13,7 +14,7 @@ const ShoppiePage = () => {
         </div>
         <div className='project-buttons'>
           <a
-            href='https://github.com/RichieCoding/Ecommerce-Front-End'
+            href='https://www.youtube.com/watch?v=hMX7iptbRaU'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -47,8 +48,10 @@ const ShoppiePage = () => {
       </div>
       <hr></hr>
       <h2 className='timeline-title'>TechStack</h2>
-      <ScrollAnimation animateIn='fadeIn'>
         <Timeline />
+      <hr className='last-hr'/>
+      <ScrollAnimation animateIn='fadeInRight' offset='50'>
+        <ProjectNav />
       </ScrollAnimation>
     </div>
   );

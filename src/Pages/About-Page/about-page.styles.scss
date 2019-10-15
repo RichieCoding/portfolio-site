@@ -59,6 +59,7 @@
       &:hover {
         // color: rgb(67, 38, 235);
         border-right: 2px solid rgb(67, 38, 235);
+        transition: border-right .5s;
       }
     }
 
@@ -73,7 +74,8 @@
       animation: viewProject 1s ease-in;
 
       &:hover {
-        border-left: 2px solid rgb(67, 38, 235)
+        border-left: 2px solid rgb(67, 38, 235);
+        transition: border-left .5s;
       }
     }
 

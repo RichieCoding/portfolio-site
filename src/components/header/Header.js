@@ -20,13 +20,13 @@ const Header = (props) => {
         <div className='header-nav-items'>
           <ul>
             <li>
-              <NavLink activeClassName='active' isActive={checkActive} to='/'>About</NavLink>
+              <NavLink className='cool-link' activeClassName='active' isActive={checkActive} to='/'>About</NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' to='/projects'>Projects</NavLink>
+              <NavLink className='cool-link' activeClassName='active' to='/projects'>Projects</NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' to='/contact'>Contact</NavLink>
+              <NavLink className='cool-link' activeClassName='active' to='/contact'>Contact</NavLink>
             </li>
           </ul>
         </div>

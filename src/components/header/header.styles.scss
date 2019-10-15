@@ -2,6 +2,7 @@
 
   a {
     text-decoration: none;
+    color: black;
 
     &:visited {
       color: black;
@@ -26,14 +27,20 @@
 
     .active {
       color: rgb(67, 38, 235);
-      // text-decoration: line-through;
-      // padding-bottom: 5px;
-      // border-bottom: 2px solid rgb(67, 38, 235);
     }
-    li a:hover {
-      text-decoration: line-through;
-      text-decoration-color: rgb(67, 38, 235);
-      text-decoration-color: pink;
+
+    .cool-link::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: rgb(67, 38, 235);
+      width: 0;
+      // transition: width .3s;
+    }
+
+    .cool-link:hover::after {
+      width: 100%;
+      transition: width .3s;
     }
   }
 
