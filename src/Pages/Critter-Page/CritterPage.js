@@ -4,6 +4,7 @@ import Critter from "../../assets/images/Critter05-01.png";
 import Logo from "../../assets/images/CritterTest.png";
 import TimelineCritter from "../../components/Timeline-Critter/TimelineCritter";
 import ScrollAnimation from "react-animate-on-scroll";
+import ProjectNav from '../../components/ProjectNav/ProjectNav'
 
 const CritterPage = () => {
   return (
@@ -14,7 +15,7 @@ const CritterPage = () => {
         </div>
         <div className='project-buttons'>
           <a
-            href='https://github.com/RichieCoding/Ecommerce-Front-End'
+            href='https://youtu.be/R03Ipew-ZIs'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -41,9 +42,12 @@ const CritterPage = () => {
       </div>
       <hr></hr>
       <h2 className='timeline-title'>TechStack</h2>
-      <ScrollAnimation animateIn='fadeIn'>
         <TimelineCritter />
+      <hr className='last-hr'/>
+      <ScrollAnimation animateIn='fadeInRight' offset='50'>
+        <ProjectNav />
       </ScrollAnimation>
+      
     </div>
   );
 };
