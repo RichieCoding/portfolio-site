@@ -1,0 +1,70 @@
+.project-nav {
+  width: 100%;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Playfair Display', serif;
+  max-width: 1300px;
+
+  a {
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .active-project {
+    // color: rgb(67,38,235);
+    text-decoration: line-through;
+    // border-bottom: 1px solid;
+    font-size: 1.4em;
+  }
+
+  // SHOPPIE PROJECT
+  .shoppie {
+    &:hover {
+      color: rgb(53, 233, 185);
+    }
+  }
+
+  .active-shoppie {
+    color: rgb(53, 233, 185);
+
+    &:hover {
+      color: rgb(53, 233, 185);
+    }
+  }
+
+  // CHELLO PROJECT
+  .chello {
+    &:hover {
+      color: navy;
+    }
+  }
+
+  .active-chello {
+    color: navy;
+  }
+
+  // CRITTER PROJECT
+  .critter {
+    &:hover {
+      color: rgb(100, 163, 214);
+    }
+  }
+
+  .active-critter {
+    color: rgb(100, 163, 214);
+  }
+
+  // OKUPID PROJECT
+  .okupid {
+    &:hover {
+      color: #e7a790;
+    }
+  }
+
+  .active-okupid {
+    color: #e7a790;
+  }
+
+}
