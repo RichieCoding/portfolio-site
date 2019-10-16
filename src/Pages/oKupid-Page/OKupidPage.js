@@ -50,7 +50,7 @@ const ShoppiePage = () => {
       <h2 className='timeline-title'>TechStack</h2>
         <Timeline />
       <hr className='last-hr'/>
-      <ScrollAnimation animateIn='fadeInRight' offset='50'>
+      <ScrollAnimation animateIn='fadeInRight' offset='66'>
         <ProjectNav />
       </ScrollAnimation>
     </div>
