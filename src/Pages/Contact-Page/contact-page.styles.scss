@@ -2,6 +2,12 @@
   position: relative;
   height: 90vh;
 
+  .test {
+    font-size: calc(70px + (200 - 70) * ((100vw - 300px) / (1300 - 300)));
+    text-align: center;
+    color: rgb(228, 208, 195);
+  }
+
   .header {
     width: 90%;
     max-width: 750px;
@@ -67,6 +73,14 @@
 
 @media (min-width: 901px) {
   .contact-page {
+
+    // .test {
+    //   display: block;
+    //   font-size: calc(190px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    //   text-align: center;
+    //   color: rgb(228, 208, 195);
+    // }
+
     .header {
       width: 50%;
       // top: 45%;
