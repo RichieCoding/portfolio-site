@@ -71,15 +71,12 @@
   }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 901px) and (min-height: 950px) {
   .contact-page {
 
-    // .test {
-    //   display: block;
-    //   font-size: calc(190px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    //   text-align: center;
-    //   color: rgb(228, 208, 195);
-    // }
+    .test {
+      color: rgb(228, 208, 195);
+    }
 
     .header {
       width: 50%;

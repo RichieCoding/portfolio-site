@@ -44,7 +44,7 @@
       left: 5%;
       // font-size: 2.1em;
       // font-size: calc(25px + (110 - 25) * ((100vw - 300px) / (1300 - 300)));
-      @include fluid-type(font-size, 300px, 1300px, 25px, 110px);
+      @include fluid-type(font-size, 300px, 1300px, 25px, 100px);
       color: rgb(235,224,217);
       animation-name: moveInTop;
       animation-duration: 1s;
