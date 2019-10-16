@@ -8,6 +8,9 @@ import Github from '../../assets/icons/github.png'
 const ContactPage = () => {
   return (
     <div className='contact-page'>
+      <div className="test">
+        <p className='contact-text'>CONTACT</p>
+      </div>
       <div className="header">
         <ContactForm />
         <hr/>
