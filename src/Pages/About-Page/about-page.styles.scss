@@ -1,3 +1,29 @@
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    #{$property}: $min-value;
+  }
+
+  @media (min-width: $min-vw) {
+    @each $property in $properties {
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+    }
+  }
+
+  @media (min-width: $max-vw) {
+    @each $property in $properties {
+      #{$property}: $max-value;
+    }
+  }
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
 .about-page {
   height: 91vh;
   margin: 0 auto;
@@ -16,7 +42,9 @@
       position: absolute;
       top: 5%;
       left: 5%;
-      font-size: 2.1em;
+      // font-size: 2.1em;
+      // font-size: calc(25px + (110 - 25) * ((100vw - 300px) / (1300 - 300)));
+      @include fluid-type(font-size, 300px, 1300px, 25px, 100px);
       color: rgb(235,224,217);
       animation-name: moveInTop;
       animation-duration: 1s;
@@ -102,7 +130,8 @@
       transform: translate(-17%, -65%);
 
       .fullstack {
-        font-size: 4.5em;
+        // font-size: 4.5em;
+        @include fluid-type(font-size, 300px, 1300px, 68px, 120px);
         animation: moveInLeft 1s;
         user-select: none;
         // animation-timing-function: ease-out;
@@ -246,7 +275,7 @@
   .about-page {
     .main-purple-box {
       .intro-name {
-        font-size: 3.1em;
+        // font-size: 3.1em;
       }
     }
 
@@ -272,7 +301,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       .intro-name {
-        font-size: 5.1em;
+        // font-size: 5.1em;
       }
     }
 
@@ -286,7 +315,7 @@
 
       .header1 {
         .fullstack {
-          font-size: 10vw;
+          // font-size: 10vw;
         }
       }
     }
@@ -305,7 +334,7 @@
       // min-height: 650px;
       // min-height: 50%;
       .intro-name {
-        font-size: 6em;
+        // font-size: 6em;
       }
     }
     .text {
@@ -318,7 +347,7 @@
 
       .header1 {
         .fullstack {
-          font-size: 7.5vw;
+          // font-size: 7.5vw;
 
           // max-height: 140px;
         }
@@ -349,7 +378,7 @@
 
       .header1 {
         .fullstack {
-          font-size: 9.5vw;
+          // font-size: 9.5vw;
 
           // max-height: 140px;
         }
@@ -381,7 +410,7 @@
 
     .header1 {
       .fullstack {
-        font-size: 7vw;
+        // font-size: 7vw;
       }
     }
 
@@ -410,7 +439,7 @@
 
     .header1 {
       .fullstack {
-        font-size: 7.5vw;
+        // font-size: 7.5vw;
       }
     }
   }
@@ -431,13 +460,13 @@
 
     .header1 {
       .fullstack {
-        font-size: 10vw;
+        // font-size: 10vw;
       }
     }
   }
 }
 
-@media (min-height: 100px) and (max-height: 800px) and (min-width: 650px) {
+@media (min-height: 100px) and (max-height: 850px) and (min-width: 650px) {
   .about-page {
     .main-purple-box {
       height: 65%;
@@ -452,7 +481,7 @@
 
       .header1 {
         .fullstack {
-          font-size: 6em;
+          font-size: 6.5em;
         }
       }
     }
@@ -495,7 +524,7 @@
       max-width: 1000px;
 
       .intro-name {
-        font-size: 6em;
+        // font-size: 6em;
       }
     }
 
@@ -505,7 +534,7 @@
         left: 20%;
         transform: translate(-20%, -67%);
         .fullstack {
-          font-size: 8em;
+          // font-size: 8em;
         }
       }
     }

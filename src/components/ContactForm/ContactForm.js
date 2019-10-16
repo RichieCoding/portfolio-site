@@ -56,7 +56,7 @@ export class ContactForm extends Component {
       <>
       {!this.state.sent ?
       <form className='contact-form'>
-        <h3>Send a Message</h3>
+        <h3 className='send-message'>Send a Message</h3>
         <div className='form-inputs'>
           <input
             type='text'
