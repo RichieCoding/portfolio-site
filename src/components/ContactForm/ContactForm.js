@@ -88,7 +88,7 @@ export class ContactForm extends Component {
           onChange={this.handleChange}
         ></textarea>
         <input className='submit-btn' type='button' value='Send' onClick={this.handleSubmit} /> {this.state.submittedEmpty ? <span className='error-message'>Please enter into all fields</span> : null }
-      </form> : <h3>Thank you, Message Sent</h3> }
+      </form> : <h3 className='sent-message'>Thank you, Message Sent</h3> }
       </>
     );
   }

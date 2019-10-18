@@ -1,7 +1,4 @@
 .okupid-page {
-  // width: 90%;
-  // max-width: 1200px;
-  // margin: 0 auto;
   animation: fadeIn .5s ease-out;
 
   .timeline-title {
@@ -11,10 +8,6 @@
     text-align: center;
     font-size: 2.2em;
     font-family: 'Playfair Display', serif;
-    // border: 1px solid #e7a790;
-    // border-left: none;
-    // border-right: none;
-    // border-radius: 10px;
   }
 
   .main-image {
@@ -132,7 +125,7 @@
     }
 
     .last-hr {
-      margin: 85px auto;
+      margin: 85px auto 65px;
     }
 
   }

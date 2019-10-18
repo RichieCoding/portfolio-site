@@ -44,7 +44,7 @@ const CritterPage = () => {
       <h2 className='timeline-title'>TechStack</h2>
         <TimelineCritter />
       <hr className='last-hr'/>
-      <ScrollAnimation animateIn='fadeInRight' offset='50'>
+      <ScrollAnimation animateIn='fadeInRight' offset='66'>
         <ProjectNav />
       </ScrollAnimation>
       

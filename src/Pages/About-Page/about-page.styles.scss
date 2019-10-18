@@ -134,6 +134,8 @@
         @include fluid-type(font-size, 300px, 1300px, 68px, 120px);
         animation: moveInLeft 1s;
         user-select: none;
+        font-family: 'Playfair Display', serif;
+        color: black;
         // animation-timing-function: ease-out;
       }
     }
@@ -175,7 +177,7 @@
         color: pink;
         text-align: right;
         float: right;
-        margin-top: 30px;
+        margin-top: 40px;
         cursor: pointer;
         animation: arrowRight 1s;
 
