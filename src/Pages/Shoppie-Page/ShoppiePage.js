@@ -14,7 +14,7 @@ const ShoppiePage = () => {
         </div>
         <div className='project-buttons'>
           <a
-            href='https://github.com/RichieCoding/Ecommerce-Front-End'
+            href='http://shoppie-front-end.herokuapp.com/'
             target='_blank'
             rel='noopener noreferrer'
           >
