@@ -38,13 +38,6 @@ const ShoppiePage = () => {
             that matches you with other users based on your profile information.
           </p>
         </div>
-        <div className='credentials'>
-          <div style={{ margin: "20px 0" }}>
-            <h4 className='side-title'>Login</h4>
-            <p>Username: batman</p>
-            <p>Password: abc123</p>
-          </div>
-        </div>
       </div>
       <hr></hr>
       <h2 className='timeline-title'>TechStack</h2>
