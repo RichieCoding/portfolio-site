@@ -130,13 +130,10 @@
       transform: translate(-17%, -65%);
 
       .fullstack {
-        // font-size: 4.5em;
         @include fluid-type(font-size, 300px, 1300px, 68px, 120px);
         animation: moveInLeft 1s;
         user-select: none;
         font-family: 'Playfair Display', serif;
-        color: black;
-        // animation-timing-function: ease-out;
       }
     }
  
