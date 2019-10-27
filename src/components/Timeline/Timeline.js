@@ -15,7 +15,7 @@ const Timeline = () => {
           title='Ruby on Rails'
           description='Developed a Rails API backend with endpoints for users, products, cart and orders'
         />
-        <TimelineInfo title='SCSS' description='Implemented the UI/UX with SCSS' />
+        <TimelineInfo title='SASS' description='Implemented the UI/UX with SCSS' />
         <TimelineInfo title='PostgreSQL' description='Created object relational database to store and keep track of customers, inventory, and orders placed' />
         <TimelineInfo title='JSON Web Token' description='Utilized with local storage to store encrypted user information client-side and bcrypt server-side' />
         <div style={{ clear: "both" }}></div>
