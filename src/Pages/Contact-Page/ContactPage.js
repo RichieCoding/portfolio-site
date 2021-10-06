@@ -15,9 +15,9 @@ const ContactPage = () => {
         <ContactForm />
         <hr/>
         <div className="contact-icons">
-          <a href="https://www.linkedin.com/in/richard-li-ny/" target="_blank"><img src={Linkedin} alt="linkedin" style={{width: '35px'}}/></a>
-          <a href="https://github.com/RichieCoding" target="_blank"><img src={Github} alt="linkedin" style={{width: '30px', height: '30px'}}/></a>
-          <a href="https://medium.com/@richardli125" target="_blank"><img src={Medium} alt="linkedin" style={{width: '30px', height: '30px'}}/></a>
+          <a href="https://www.linkedin.com/in/richard-li-ny/" target="_blank" rel="noopener noreferrer"><img src={Linkedin} alt="linkedin" style={{width: '35px'}}/></a>
+          <a href="https://github.com/RichieCoding" target="_blank" rel="noopener noreferrer"><img src={Github} alt="linkedin" style={{width: '30px', height: '30px'}}/></a>
+          <a href="https://medium.com/@richardli125" target="_blank" rel="noopener noreferrer"><img src={Medium} alt="linkedin" style={{width: '30px', height: '30px'}}/></a>
         </div>
       </div>
     </div>
