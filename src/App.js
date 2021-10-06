@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MenuPage from "./Pages/MenuPage/MenuPage";
-import Header from "./components/Header/Header";
+import Header from "./components/Headers/Header";
 import { Switch, Route } from "react-router-dom";
 import ProjectPage from "./Pages/Projects Page/ProjectPage";
 import ShoppiePage from "./Pages/Shoppie-Page/ShoppiePage";
