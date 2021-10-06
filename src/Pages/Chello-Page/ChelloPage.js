@@ -14,11 +14,11 @@ const ChelloPage = () => {
         </div>
         <div className='project-buttons'>
           <a
-            href='https://chello-front-end.herokuapp.com/'
+            href='https://youtu.be/ZOburgMwEmc'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <p>Demo</p>
+            <p>Video</p>
           </a>
           <a
             href='https://github.com/RichieCoding/tGRAH-front-end'
