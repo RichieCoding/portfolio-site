@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const ProjectNav = () => {
   return (
-    <div className='project-nav'>
+    <div className='project-nav' style={{ paddingBottom: "75px"}}>
       <NavLink
         activeClassName='active-project active-shoppie'
         className='shoppie'
